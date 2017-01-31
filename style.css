@@ -7,13 +7,19 @@ font-size: 14px;
 .logo{
 font-size: 50px;
 color: white;
+margin-left: 150px;
 margin-bottom: 10px;
 margin-top: 0px;
+font-family: 'Pattaya', sans-serif;
+
 }
+
 .tagline{
 font-size: 24px;
+margin-left: 140px;
 color: white;
 margin-top: -10px;
+padding: 10px;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -34,16 +40,17 @@ margin: auto;
 }
 .button
 {
-background-color: cyan;
+background-color: #c83349;
 color: white;
 border: none;
-padding: 10px 20px;
+padding: 20px 20px;
 border-radius: 4px;
 cursor: pointer;
-
+margin-left: 160px;
+font-weight: bold;
 }
 .button:hover{
-background-color: blue;
+background-color: #e06377;
 color: white;
 }
 /*

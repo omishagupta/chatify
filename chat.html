@@ -9,27 +9,11 @@
 <body>
   <div class="members">
 <div class="user-info">
-Omisha gupta
-<span class="logout"> log out </span>
+<span id="username"></span>
+<span class="logout"> logout </span>
 
 </div>
-<div class="contacts">
-<div class="contact">
-  Rahul
-
-</div>
-<div class="contact">
-  Sadaf
-
-</div>
-<div class="contact">
-  Shahbaz
-
-</div>
-<div class="contact active">
-  Aman
-
-</div>
+<div class="contacts" id="contacts">
 
 
 </div>
@@ -38,41 +22,32 @@ Omisha gupta
 
 <div class="messages">
 <div class="chat-info">
-Aman
-</div>
-<div class="message by-user">
-hey! hi!
 
 </div>
-<div class="message">
-got to learn html.
+<div id="messages">
 
-</div>
-<div class="message by-user">
-session is cool
-
-</div>
-<div class="message">
-got to learn html.
-
-</div>
-<div class="message by-user">
-session is cool
-
-</div>
-<div class="message">
-got to learn html.
-
-</div>
-<div class="message by-user">
-session is cool
-
-</div>
 </div>
 <div class="chat-form">
-<input type="text" class="chat-message"
-placeholder="write your message and enter..."/>
+<input type="hidden" id="chat-id"/>
+<input  type="text" class="chat-message"
+placeholder="write your message and enter..." id="message-text"/>
+<button id="send-button">Send</button>
 
 </div>
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAbB2zzHYb_nRHMyiMjr-shu6UyubhlwAg",
+    authDomain: "chatify-a3401.firebaseapp.com",
+    databaseURL: "https://chatify-a3401.firebaseio.com",
+    storageBucket: "chatify-a3401.appspot.com",
+    messagingSenderId: "190888400640"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="chat.js"></script>
 </body>
 </html>

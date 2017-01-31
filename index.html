@@ -10,8 +10,21 @@
 <div class="main">
 <h1 class="logo"> Chatify </h1>
 <p class="tagline">An instant chat platform.</p>
-<button class="button">Sign in with google</button>
-
+<button id="signin-button" class="button">Sign in with google</button>
 </div>
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAbB2zzHYb_nRHMyiMjr-shu6UyubhlwAg",
+    authDomain: "chatify-a3401.firebaseapp.com",
+    databaseURL: "https://chatify-a3401.firebaseio.com",
+    storageBucket: "chatify-a3401.appspot.com",
+    messagingSenderId: "190888400640"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript" src="app.js"></script>
 </body>
 <html>
